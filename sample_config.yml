@@ -1,0 +1,36 @@
+train_path: "train_data_path"
+dev_path: "dev_data_path"
+test_path: "test_data_path"
+model_name_or_path: "cl-tohoku/bert-base-japanese-whole-word-masking"
+tokenizer_name_or_path: "cl-tohoku/bert-base-japanese-whole-word-masking"
+model_dir: "/home/hiro819/projects/Reducing_cost/debug/model"
+learning_rate: 1.0e-5
+weight_decay: 0.0
+adam_epsilon: 1.0e-8
+warmup_steps: 0
+gradient_accumulation_steps: 1
+input_max_len: 250
+target_max_len: 4
+train_batch_size: 32
+eval_batch_size: 32
+num_train_epochs: 30
+
+max_score: 3
+use_criteria: True
+adaptive_pretrain: False
+
+n_gpu: 1
+item: B
+prompt: ""
+data_num: 10
+
+early_stop_callback: False
+fp_16: False
+opt_level: "O0"
+max_grad_norm: 1.0
+seed: 0
+
+use_wandb: False
+wandb_project: 'CrossPromptSAS_size'
+wandb_name: 'prompt_Y14_2-1_2_3_B`D'
+
