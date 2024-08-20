@@ -1,5 +1,3 @@
-# Reducing_cost
-
 This repository includes scrpits for training BERT models used for Reducing the cost: Cross-Prompt Pre-finetuning for Short Answer Scoring. 
 There are three function in the main script.
 1. **Training**: Fine-tuning a BERT model for specific prompt based on a given configuration.
